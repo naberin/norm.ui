@@ -19,13 +19,28 @@ ul, ol {
     padding: 0;
 }
 
+.hoverable:hover,
 a:hover,
 button:hover {
     cursor: pointer;
 }
 
+button[disabled],
+input[disabled],
+select[disabled],
+textarea[disabled] {
+    cursor: not-allowed;
+}
+
 ul li, ol li {
     list-style: none;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
 }
 
 /* Common Classes */
@@ -182,4 +197,14 @@ ul li, ol li {
         flex-direction: column;
     }
 
+}
+
+/* Toggling Styles */
+
+.hidden {
+    display: none !important;
+}
+
+.hidden.flex.is-active {
+    display: flex !important;
 }
