@@ -208,3 +208,9 @@ textarea:focus {
 .hidden.flex.is-active {
     display: flex !important;
 }
+
+/* Framework Rules - Buttons */
+.clickable:active:not([disabled]) {
+    position: relative;
+    top: 2px;
+}
