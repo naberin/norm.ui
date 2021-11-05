@@ -202,11 +202,11 @@ textarea:focus {
 /* Toggling Styles */
 
 .hidden {
-    display: none !important;
+    display: none;
 }
 
 .hidden.flex.is-active {
-    display: flex !important;
+    display: flex;
 }
 
 /* Framework Rules - Buttons */
@@ -214,3 +214,5 @@ textarea:focus {
     position: relative;
     top: 2px;
 }
+
+/* Framework Rules */
